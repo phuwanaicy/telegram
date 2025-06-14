@@ -80,7 +80,7 @@ async function decodeQRFromFile(imgPath) {
         await redeemAngpaoPuppeteer(voucherHash, phone, chatId);
       }
     }
-    // 2. ถ้าแนบไฟล์ภาพ (QR)
+    // 2. (QRCODE)
     if (message.media) {
       try {
         const buffer = await client.downloadMedia(message.media);
